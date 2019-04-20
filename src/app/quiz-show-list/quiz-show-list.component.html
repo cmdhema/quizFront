@@ -1,0 +1,24 @@
+<app-reserve-quiz-show (addList)='onAddList($event)'> </app-reserve-quiz-show>
+<!-- Table starts here -->
+<table id="table">
+  <thead>
+    <tr>
+      <th>Date Time</th>
+      <th>상품</th>
+      <th> 총상금 </th>
+      <th>참여 인원</th>
+      <th>우승 인원</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let list of lists">
+      <td>{{list.datetime}}</td>
+      <td>{{list.prizeKind}}</td>
+      <td>{{list.amount}}</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+

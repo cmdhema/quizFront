@@ -1,0 +1,21 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="datetime">Date Time</label>
+      <input type="text" [(ngModel)]="newList.datetime" name="datetime">
+    </div>
+
+    <div>
+      <label for="prizeKind">상품 토큰</label>
+      <input type="text" [(ngModel)]="newList.prizeKind" name="prizeKind">
+    </div>
+
+    <div>
+      <label for="amount">총 상금</label>
+      <input type="text" [(ngModel)]="newList.amount" name="amount">
+    </div>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
